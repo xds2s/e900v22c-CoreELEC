@@ -12,7 +12,6 @@ jobs:
           sudo apt-get update -y
           sudo apt-get install -y make gcc git texinfo gzip squashfs-tools
       
-      - name: Checkout OpenWrt
+      - name: Checkout e900v22c-coreelec
         uses: actions/checkout@v3
-        run: |
-          ls
+
