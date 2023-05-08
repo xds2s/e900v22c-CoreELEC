@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+  
+jobs:
+  build_image:
+    name: build coreelec image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Space cleanup and Initialization environment
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y make gcc git texinfo gzip squashfs-tools
