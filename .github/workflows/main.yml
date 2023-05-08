@@ -15,7 +15,8 @@ jobs:
       - name: Checkout e900v22c-coreelec
         uses: actions/checkout@v3
 
-      - name: display
+      - name: compile
         run: |
-          pwd
-          ls
+          ./build
+      - name: Upload firmware
+        uses: actions/upload-artifact@v3
