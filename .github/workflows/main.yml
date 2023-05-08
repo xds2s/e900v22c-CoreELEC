@@ -17,6 +17,7 @@ jobs:
 
       - name: compile
         run: |
-          ./build
+          ls
+          ./build.sh
       - name: Upload firmware
         uses: actions/upload-artifact@v3
